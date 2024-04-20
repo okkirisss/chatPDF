@@ -26,13 +26,6 @@ To use ChatPDF, follow these steps:
 - Backend: Node.js, Express.js
 - LLM mode: gpt-3.5-turbo
 
-**Terminal for frontend**
-
-```bash 
-cd client
-npm install
-npm start
-```
 **Terminal for backend**
 
 ```bash
@@ -40,6 +33,13 @@ cd server
 npm install
 npm start
 
+```
+**Terminal for frontend**
+
+```bash 
+cd client
+npm install
+npm start
 ```
 
 ## Security Considerations
