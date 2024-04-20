@@ -2,7 +2,7 @@
 
 ## Overview
 
-ChatPDF is a revolutionary web application that provides an interactive way to explore and understand the contents of PDF documents. It allows users to upload PDF files and ask questions about the uploaded content, offering an intuitive interface to receive answers extracted directly from the text. This tool is invaluable for students, researchers, and professionals who need to quickly gain insights from their PDF documents without the need to read through the entire content.
+ChatPDF is a web application that provides an interactive way to explore and understand the contents of PDF documents. It allows users to upload PDF files and ask questions about the uploaded content, offering an intuitive interface to receive answers extracted directly from the text.
 
 ## Features
 
@@ -23,7 +23,7 @@ To use ChatPDF, follow these steps:
 ## Technical Stack
 
 - Frontend: React
-- Backend: Node.js, express.js
+- Backend: Node.js, Express.js
 - LLM mode: gpt-3.5-turbo
 
 **Terminal for frontend**
