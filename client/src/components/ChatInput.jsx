@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
-function ChatInput() {
+function ChatInput({ onNewMessage }) {
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    alert(`Message to send: ${message}`);
+    if (!message.trim()) return; // Prevent sending empty messages
+
+    // Send the message to the server and get the answer
+    try {
+      const { data } = await axios.post('http://localhost:8000/ask', { question: message });
+      onNewMessage({ text: message, sender: "user" }); // Show the user's question
+      onNewMessage({ text: data.answer, sender: "ai" }); // Show the AI's answer
+    } catch (error) {
+      console.error('Error submitting question:', error);
+      alert('Failed to get an answer');
+    }
+
     setMessage(''); 
   };
 

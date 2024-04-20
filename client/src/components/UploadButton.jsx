@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function UploadButton() {
+function UploadButton({ onFileUploadSuccess }) {
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleFileChange = (event) => {
@@ -18,12 +18,13 @@ function UploadButton() {
     formData.append('file', selectedFile);
 
     try {
-      await axios.post('http://localhost:5000/upload', formData, {
+      await axios.post('http://localhost:8000/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
       alert('File uploaded successfully');
+      onFileUploadSuccess(); 
     } catch (error) {
       console.error('Error uploading file:', error);
       alert('Error uploading file');

@@ -1,0 +1,98 @@
+/* App-wide styles */
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Chat window styles */
+  .chat-window {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+  
+  .message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 80%;
+  }
+  
+  .message.ai {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    text-align: left;
+  }
+  
+  .message.user {
+    background-color: #c8e6c9;
+    color: #155724;
+    text-align: right;
+  }
+  
+  /* Chat input styles */
+  .chat-input {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .chat-input button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0;
+  }
+  
+  /* Upload button styles */
+  .upload-button {
+    margin: 20px;
+    display: inline-block;
+  }
+  
+  .upload-button input[type="file"] {
+    display: none;
+  }
+  
+  .upload-button label {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .upload-button button {
+    margin-left: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
