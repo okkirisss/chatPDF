@@ -41,3 +41,14 @@ npm install
 npm start
 
 ```
+
+## Security Considerations
+
+1. **.env for Sensitive Data**: We use `.env` files to manage sensitive configuration options and secrets, ensuring that API keys and other critical information are not hard-coded into the source code.
+
+### Limitations
+1. **Format Restrictions**: The application currently only supports the PDF format. Other document types are not supported at this time.
+
+2. **API Dependencies**: The system's functionality is heavily dependent on third-party APIs for AI and ML, which may introduce constraints related to query limits, rate limiting, and changes to API terms and conditions.
+
+3. **Document Complexity**: Complex layouts, such as multi-column text or text mixed with images, might affect the AI's ability to accurately interpret and answer questions.
