@@ -27,9 +27,11 @@ To use ChatPDF, follow these steps:
 - LLM mode: gpt-3.5-turbo
 
 ### Instructions
-In the project directory, you should open two terminals.
+In the project directory, you should first install Node.js and open two terminals.
 
 After Cloning the project repository from Github, you need to firstly install necessary dependencies:
+
+You also need to include .env file under the server folder.
 
 **Terminal for backend**
 
