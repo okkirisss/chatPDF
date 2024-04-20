@@ -41,11 +41,3 @@ npm install
 npm start
 
 ```
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-Enjoy using ChatPDF, and we look forward to your feedback and contributions!
